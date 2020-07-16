@@ -4,13 +4,14 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>4cfffdbf-8178-4840-8df0-c04fe917e163</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>EDataA.py</StartupFile>
+    <StartupFile>visualTest.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
     <OutputPath>.</OutputPath>
     <Name>EDataA</Name>
     <RootNamespace>EDataA</RootNamespace>
+    <InterpreterId>CondaEnv|CondaEnv|env</InterpreterId>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
     <DebugSymbols>true</DebugSymbols>
@@ -22,6 +23,12 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="EDataA.py" />
+    <Compile Include="visualTest.py">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <InterpreterReference Include="CondaEnv|CondaEnv|env" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in
